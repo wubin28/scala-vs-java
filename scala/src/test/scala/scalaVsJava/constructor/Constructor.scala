@@ -10,11 +10,8 @@ class Constructor extends FunSuite{
     override def toString: String = firstName + " " + lastName
   }
 
-  val fullName = new FullName("Ben", "Wu")
-
   test("scala's constructor is concise") {
+    val fullName = new FullName("Ben", "Wu")
     assert("Ben Wu" === fullName.toString)
   }
-
-
 }
