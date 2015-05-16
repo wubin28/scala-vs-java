@@ -29,7 +29,8 @@ public class Loop {
 
     @Test
     public void in_java_loop_is_more_popular_than_recursive() {
-        FileNameLocator fileNameLocator = new FileNameLocator(new String[]{"-xvz", "helloWorld.scala"});
+        FileNameLocator fileNameLocator = new FileNameLocator(
+                new String[]{"-xvz", "helloWorld.scala"});
         assertEquals(1, fileNameLocator.firstScalaFileIndex());
     }
 }
