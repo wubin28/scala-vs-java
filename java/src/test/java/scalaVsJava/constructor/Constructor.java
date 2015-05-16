@@ -18,17 +18,14 @@ public class Constructor {
 
         @Override
         public String toString() {
-            return "FullName{" +
-                    "firstName='" + firstName + '\'' +
-                    ", lastName='" + lastName + '\'' +
-                    '}';
+            return firstName + " " + lastName;
         }
     }
 
     @Test
     public void javas_constructor_is_very_verbose() {
         FullName fullName = new FullName("Ben", "Wu");
-        assertEquals("FullName{firstName='Ben', lastName='Wu'}", fullName.toString());
+        assertEquals("Ben Wu", fullName.toString());
     }
 
 }
